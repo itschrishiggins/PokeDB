@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PokemonDBEntityDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PokemonTbl">
+    <Key>
+      <PropertyRef Name="PokedexNo" />
+    </Key>
+    <Property Name="PokedexNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PokemonName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Type1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Type2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Image2" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="TrainerTbls" Relationship="Self.FK_TrainerTbl_PokemonTbl" FromRole="PokemonTbl" ToRole="TrainerTbl" />
+  </EntityType>
+  <EntityType Name="TrainerTbl">
+    <Key>
+      <PropertyRef Name="TrainerID" />
+    </Key>
+    <Property Name="TrainerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrainerName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PokedexNo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PokemonTbl" Relationship="Self.FK_TrainerTbl_PokemonTbl" FromRole="TrainerTbl" ToRole="PokemonTbl" />
+  </EntityType>
+  <Association Name="FK_TrainerTbl_PokemonTbl">
+    <End Role="PokemonTbl" Type="Self.PokemonTbl" Multiplicity="1" />
+    <End Role="TrainerTbl" Type="Self.TrainerTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PokemonTbl">
+        <PropertyRef Name="PokedexNo" />
+      </Principal>
+      <Dependent Role="TrainerTbl">
+        <PropertyRef Name="PokedexNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PokemonDBEntitiesConnectionString" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PokemonTbls" EntityType="Self.PokemonTbl" />
+    <EntitySet Name="TrainerTbls" EntityType="Self.TrainerTbl" />
+    <AssociationSet Name="FK_TrainerTbl_PokemonTbl" Association="Self.FK_TrainerTbl_PokemonTbl">
+      <End Role="PokemonTbl" EntitySet="PokemonTbls" />
+      <End Role="TrainerTbl" EntitySet="TrainerTbls" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

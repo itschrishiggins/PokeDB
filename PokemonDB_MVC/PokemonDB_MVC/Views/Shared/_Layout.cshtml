@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/CSS/Site.css" rel="stylesheet" type="text/css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/colorthief/dist/color-thief.umd.js"></script>
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="@Url.Content("~/Images/favicon.ico")" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx-icon icon logo-png'><img src="~/Images/Home/pokeball-logo.png" /></i>
+            <div class="logo_name">PokéDB</div>
+            <i class="fa-solid fa-bars fa" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='fa-solid fa-magnifying-glass fa bx-search'></i>
+                @using (Html.BeginForm("Index", "PokemonTbls", FormMethod.Get))
+                {
+                    @Html.TextBox("searchPokemon", "", new { placeholder = "Search Pokémon" })
+                }
+                    <span class="tooltip">Search Pokémon</span>
+
+            </li>
+            <li>
+                <a href="@Url.RouteUrl("homepage")">
+                    <i class="fa-solid fa-house fa"></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="@Url.RouteUrl("pokedexpage")">
+                    <i class="fap">
+                        <svg height="256" width="256" viewBox="0 0 256 256" class="nav-icons">
+                            <path d="m 154.54015,127.99605 c 0,14.65791 -11.88258,26.5405 -26.54049,26.5405 -14.65792,0 -26.5405,-11.88259 -26.5405,-26.5405 0,-14.65791 11.88258,-26.5405 26.5405,-26.5405 14.65791,0 26.54049,11.88259 26.54049,26.5405 z M 127.98849,38 C 82.019956,38 44.102136,72.45551 38.65601,116.95141 l 48.360613,0 c 4.858969,-18.07571 21.360667,-31.3734 40.971867,-31.3734 19.6112,0 36.13066,13.29769 40.99488,31.3734 l 48.36062,0 C 211.8949,72.45551 173.95702,38 127.98849,38 z M 38.65601,139.04859 C 44.102136,183.54449 82.019956,218 127.98849,218 c 45.96853,0 83.90641,-34.45551 89.3555,-78.95141 l -48.36062,0 c -4.86422,18.07571 -21.38368,31.37341 -40.99488,31.37341 -19.6112,0 -36.112898,-13.2977 -40.971867,-31.37341 l -48.360613,0 z" />
+                        </svg>
+                    </i>
+                    <span class="links_name">Pokédex</span>
+                </a>
+                <span class="tooltip">Pokédex</span>
+            </li>
+            <li>
+                <a href="@Url.RouteUrl("aboutpage")">
+                    <i class="fa-solid fa-gamepad fa"></i>
+                    <span class="links_name">About Pokémon</span>
+                </a>
+                <span class="tooltip">About Pokémon</span>
+            </li>
+            <li>
+                <a href="@Url.RouteUrl("listpage")">
+                    <i class="fa-solid fa-trophy fa"></i>
+                    <span class="links_name">Hall of Fame</span>
+                </a>
+                <span class="tooltip">Hall of Fame</span>
+            </li>
+        </ul>
+    </div>
+    <section class="main-section">
+        <div class="container body-content">
+            @RenderBody()
+        </div>
+    </section>
+
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+        });
+
+        // following are the code to change sidebar button()
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("fa-bars", "fa-bars-sort");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("fa-bars-sort", "fa-bars");//replacing the iocns class
+            }
+        }
+    </script>
+
+</body>
+</html>

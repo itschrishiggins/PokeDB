@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PokemonInfoDB_ModelNamespace.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PokemonInfoTbl">
+    <Key>
+      <PropertyRef Name="PokedexNo" />
+    </Key>
+    <Property Name="PokedexNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category" Type="nvarchar" MaxLength="20" />
+    <Property Name="HeightMetres" Type="float" />
+    <Property Name="WeightKG" Type="float" />
+    <Property Name="Description" Type="nvarchar" MaxLength="200" />
+    <Property Name="Total" Type="int" Nullable="false" />
+    <Property Name="HP" Type="int" Nullable="false" />
+    <Property Name="Attack" Type="int" Nullable="false" />
+    <Property Name="Defense" Type="int" Nullable="false" />
+    <Property Name="SpAtk" Type="int" Nullable="false" />
+    <Property Name="SpDef" Type="int" Nullable="false" />
+    <Property Name="Speed" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PokemonInfoDB_ModelNamespaceStoreContainer">
+    <EntitySet Name="PokemonInfoTbl" EntityType="Self.PokemonInfoTbl" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

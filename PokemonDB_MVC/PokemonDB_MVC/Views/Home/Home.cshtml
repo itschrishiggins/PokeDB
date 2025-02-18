@@ -1,0 +1,39 @@
+﻿@model IEnumerable<PokemonDB_MVC.Models.PokemonTbl>
+@using System.Collections
+@using System
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="home-container">
+    <h1 class="home-logo">
+        P<img class="home-logo-ball" src="~/Images/Home/pokeball-logo.png" />kéDB
+    </h1>
+    <div class="home-main-container">
+
+
+        <div class="oak-container">
+            <p class="bubble">"Welcome to PokéDB!"</p>
+            <img class="oak-image" src="~/Images/Home/Professor_Oak.png" />
+        </div>
+
+        <div class="pokedex-container">
+
+        </div>
+        <figure class="pokedex-image">
+            <figcaption>
+                Click on the Pokédex below to see Pokémon <br> 
+            </figcaption>
+            <a href="@Url.RouteUrl("pokedexpage")"><img src="~/Images/Home/DP_Pokédex.png"></a>
+
+        </figure>
+
+        
+    </div>
+</div>
+
+
+

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PokemonInfoDB_ModelNamespaceStoreContainer" CdmEntityContainer="PokemonInfoDB_ConnectionString">
+    <EntitySetMapping Name="PokemonInfoTbls">
+      <EntityTypeMapping TypeName="PokemonInfoDB_ModelNamespace.PokemonInfoTbl">
+        <MappingFragment StoreEntitySet="PokemonInfoTbl">
+          <ScalarProperty Name="PokedexNo" ColumnName="PokedexNo" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="HeightMetres" ColumnName="HeightMetres" />
+          <ScalarProperty Name="WeightKG" ColumnName="WeightKG" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="HP" ColumnName="HP" />
+          <ScalarProperty Name="Attack" ColumnName="Attack" />
+          <ScalarProperty Name="Defense" ColumnName="Defense" />
+          <ScalarProperty Name="SpAtk" ColumnName="SpAtk" />
+          <ScalarProperty Name="SpDef" ColumnName="SpDef" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

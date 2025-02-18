@@ -1,0 +1,54 @@
+﻿@model PokemonDB_MVC.Models.TrainerTbl
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="main-section">
+    <div class="trainer-card">
+        <img src="~/Images/trainer.png" class="trainer-card-img"  style="width:100%;" />
+        <div class="trainer-id">
+            ID: @Html.DisplayFor(model => model.TrainerID)
+        </div>
+        <div class="trainer-name">
+            NAME: @Html.DisplayFor(model => model.TrainerName)
+        </div>
+        <div class="trainer-image">
+            <img />
+            @if (Model.Gender == "Male")
+            {
+                <img src="~/Images/hilbert.png" />
+            }
+            else if (Model.Gender == "Female")
+            {
+                <img src="~/Images/hilda.png" />
+            }
+        </div>
+        <div class="pokemon-image">
+            @if (Model.PokemonTbl.Image != null)
+            {
+                var imgAs64 = Convert.ToBase64String(Model.PokemonTbl.Image);
+                var imgAsGif = string.Format("data:image/gif; base64, {0}", imgAs64);
+                <img src="@imgAsGif" />
+            }
+            else
+            {
+                <span>No image available</span>
+            }
+
+        </div>
+        <div class="trainer-badges">
+            <h5>BADGES</h5>
+        </div>
+    </div>
+
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TrainerID }, new { @class = "trainer-action-controls" })
+        <br />
+        @Html.ActionLink("Delete", "Delete", new { id = Model.TrainerID }, new { @class = "trainer-action-controls" })
+        <br />
+        @Html.ActionLink("Back to List", "Index", new { id = Model.TrainerID }, new { @class = "trainer-action-controls" })
+        <br />
+    </p>
+</div>
+

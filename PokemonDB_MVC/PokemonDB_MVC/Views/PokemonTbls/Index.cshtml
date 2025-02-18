@@ -1,0 +1,119 @@
+﻿@model IEnumerable<PokemonDB_MVC.Models.PokemonTbl>
+
+@{
+    ViewBag.Title = "Pokédex";
+
+    string format = "000";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<img class="pokeball-index" src="~/Images/pokeball.svg" />
+<section class="main-section">
+    <div class="filter-container">
+
+
+        @using (Html.BeginForm())
+        {
+            <div class="searchbar">
+                <strong>Find Pokémon by name: </strong>@Html.TextBox("searchPokemon",@*new { placeholder = "Search Pokémon" })*@null, new { @class = "search" })
+                <input type="submit" value="Go!" />
+            </div>
+        }
+
+        @using (Html.BeginForm())
+        {
+            <div class="search-container">
+                <strong>Type:</strong> @Html.DropDownList("searchType", null, new { @class = "search" })
+                <input type="submit" value="Go!" />
+            </div>
+        }
+
+        <div class="order-container">
+            <p>
+                @Html.ActionLink("Order by Pokédex No", "Index", new { sortOrder = ViewBag.NumberSortParm }, new { @class = "order-links" })
+            </p>
+            <p>@Html.ActionLink("Order by Name", "Index", new { sortOrder = ViewBag.NameSortParm }, new { @class = "order-links" })</p>
+        </div>
+
+
+    </div>
+
+
+    <div class="poke-container">
+        @foreach (var item in Model)
+
+        {
+            <div class="pokemon">
+                <div class="img-container">
+                    @if (item.Image != null)
+                    {
+                        var imgAs64 = Convert.ToBase64String(item.Image);
+                        var imgAsGif = string.Format("data:image/gif; base64, {0}", imgAs64);
+                        <a href='@Url.Action("Details", "PokemonTbls", new { id = item.PokedexNo })'>
+                            <img src="@imgAsGif" />
+                        </a>
+                    }
+
+                </div>
+                <div class="info">
+
+                    <span class="number">
+                        @{
+                            string paramaterValue = item.PokedexNo.ToString(format);
+                        }
+                        #@Html.DisplayFor(modelItem => paramaterValue)
+                    </span>
+                    <h3 class="name">
+                        @Html.ActionLink(item.PokemonName, "Details", new { id = item.PokedexNo }, new { @class = "name" })
+                    </h3>
+                    <div class="type">
+                        <span>
+                            @Html.DisplayFor(modelItem => item.Type1)
+                        </span>
+                    </div>
+                    <div class="type">
+                        <span>
+                            @Html.DisplayFor(modelItem => item.Type2)
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+
+
+@*jQuery to make the type element not appear for Pokemon with no second type*@
+
+<script>
+    $('.type').each(function () {
+        if (!$(this).text().trim().length) {
+            $(this).css('display', 'none');
+        }
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".type span:contains('Normal')").css('background-color', '#9099a1');
+        $(".type span:contains('Fighting')").css('background-color', '#ce4069');
+        $(".type span:contains('Flying')").css('background-color', '#92aade');
+        $(".type span:contains('Poison')").css('background-color', '#ab6ac8');
+        $(".type span:contains('Ground')").css('background-color', '#d97746');
+        $(".type span:contains('Rock')").css('background-color', '#c7b78b');
+        $(".type span:contains('Bug')").css('background-color', '#90c12c');
+        $(".type span:contains('Ghost')").css('background-color', '#5269ac');
+        $(".type span:contains('Steel')").css('background-color', '#5a8ea1');
+        $(".type span:contains('Fire')").css('background-color', '#ff9c54');
+        $(".type span:contains('Water')").css('background-color', '#4d90d5');
+        $(".type span:contains('Grass')").css('background-color', '#63bb5b');
+        $(".type span:contains('Electric')").css('background-color', '#f3d23b');
+        $(".type span:contains('Psychic')").css('background-color', '#f97176');
+        $(".type span:contains('Ice')").css('background-color', '#74cec0');
+        $(".type span:contains('Dragon')").css('background-color', '#096dc4');
+        $(".type span:contains('Dark')").css('background-color', '#5a5366');
+        $(".type span:contains('Fairy')").css('background-color', '#ec8fe6');
+    });
+</script>

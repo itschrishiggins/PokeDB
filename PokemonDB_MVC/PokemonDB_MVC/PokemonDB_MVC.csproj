@@ -1,0 +1,309 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4EDF1824-230C-486F-A906-46AC4AD4D4F0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PokemonDB_MVC</RootNamespace>
+    <AssemblyName>PokemonDB_MVC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\lib\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.3\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.6.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.0\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.3.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.3.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.3.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Site.css" />
+    <Content Include="CSS\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\About\Caterpie.png" />
+    <Content Include="Images\About\Metapod.png" />
+    <Content Include="Images\About\Butterfree.png" />
+    <Content Include="Images\About\Battle.png" />
+    <Content Include="Images\About\characters-now.png" />
+    <Content Include="Images\About\characters.png" />
+    <Content Include="Images\About\Eeevee.png" />
+    <Content Include="Images\About\gameplay-evolution.png" />
+    <Content Include="Images\About\pikachu-anime.jpg" />
+    <Content Include="Images\About\starter-pokemon.png" />
+    <Content Include="Images\About\tcg.jpg" />
+    <Content Include="Images\errorpikachu.jpg" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\Home\DP_Pokédex.png" />
+    <Content Include="Images\About\Vaporeon.png" />
+    <Content Include="Images\About\Jolteon.png" />
+    <Content Include="Images\About\Flareon.png" />
+    <Content Include="Images\About\heartscale.png" />
+    <Content Include="Images\About\pikachu-before.png" />
+    <Content Include="Images\About\pikachu-evolution.gif" />
+    <Content Include="Images\About\thunderstone.png" />
+    <Content Include="Images\About\yellowshard.png" />
+    <Content Include="Images\About\zapplate.png" />
+    <Content Include="Images\Hilbert.png" />
+    <Content Include="Images\Hilda.png" />
+    <Content Include="Images\Home\pokeball-logo.png" />
+    <Content Include="Images\Home\Professor_Oak.png" />
+    <Content Include="Images\oak.gif" />
+    <Content Include="Images\pokeball.svg" />
+    <Content Include="Images\nav icons\pokeball-nav.svg" />
+    <Content Include="Images\pokedex2.svg" />
+    <Content Include="Images\pokedex.svg" />
+    <Content Include="Images\pokemon-logo.png" />
+    <Content Include="Images\pokemon-psyduck.gif" />
+    <Content Include="Images\SVG_Trophy_Star.svg" />
+    <Content Include="Images\trainer.png" />
+    <Content Include="Images\Type Icons\bug.png" />
+    <Content Include="Images\Type Icons\dark.png" />
+    <Content Include="Images\Type Icons\dragon.png" />
+    <Content Include="Images\Type Icons\electric.png" />
+    <Content Include="Images\Type Icons\fairy.png" />
+    <Content Include="Images\Type Icons\fighting.png" />
+    <Content Include="Images\Type Icons\fire.png" />
+    <Content Include="Images\Type Icons\flying.png" />
+    <Content Include="Images\Type Icons\ghost.png" />
+    <Content Include="Images\Type Icons\grass.png" />
+    <Content Include="Images\Type Icons\ground.png" />
+    <Content Include="Images\Type Icons\ice.png" />
+    <Content Include="Images\Type Icons\normal.png" />
+    <Content Include="Images\Type Icons\poison.png" />
+    <Content Include="Images\Type Icons\psychic.png" />
+    <Content Include="Images\Type Icons\rock.png" />
+    <Content Include="Images\Type Icons\steel.png" />
+    <Content Include="Images\Type Icons\water.png" />
+    <Content Include="Javascript\JavaScript.js" />
+    <Content Include="Models\ConnectionToPokemonDBEDM.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ConnectionToPokemonDBEDM.Context.cs</LastGenOutput>
+      <DependentUpon>ConnectionToPokemonDBEDM.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ConnectionToPokemonDBEDM.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ConnectionToPokemonDBEDM.edmx</DependentUpon>
+      <LastGenOutput>ConnectionToPokemonDBEDM.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ErrorControlController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PokemonTblsController.cs" />
+    <Compile Include="Controllers\TrainerTblsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConnectionToPokemonDBEDM.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectionToPokemonDBEDM.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConnectionToPokemonDBEDM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectionToPokemonDBEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConnectionToPokemonDBEDM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConnectionToPokemonDBEDM.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PokemonInfo.cs" />
+    <Compile Include="Models\PokemonTbl.cs">
+      <DependentUpon>ConnectionToPokemonDBEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TrainerTbl.cs">
+      <DependentUpon>ConnectionToPokemonDBEDM.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <EntityDeploy Include="Models\ConnectionToPokemonDBEDM.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ConnectionToPokemonDBEDM.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ConnectionToPokemonDBEDM.edmx.diagram">
+      <DependentUpon>ConnectionToPokemonDBEDM.edmx</DependentUpon>
+    </Content>
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\PokemonTbls\Create.cshtml" />
+    <Content Include="Views\PokemonTbls\Delete.cshtml" />
+    <Content Include="Views\PokemonTbls\Details.cshtml" />
+    <Content Include="Views\PokemonTbls\Edit.cshtml" />
+    <Content Include="Views\PokemonTbls\Index.cshtml" />
+    <Content Include="Views\TrainerTbls\Create.cshtml" />
+    <Content Include="Views\TrainerTbls\Delete.cshtml" />
+    <Content Include="Views\TrainerTbls\Details.cshtml" />
+    <Content Include="Views\TrainerTbls\Edit.cshtml" />
+    <Content Include="Views\TrainerTbls\Index.cshtml" />
+    <Content Include="Views\Home\Home.cshtml" />
+    <Content Include="Views\About\About.cshtml" />
+    <Content Include="Views\ErrorControl\Http404.cshtml" />
+    <Content Include="Views\ErrorControl\Http400.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62668</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62668/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.4.1.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

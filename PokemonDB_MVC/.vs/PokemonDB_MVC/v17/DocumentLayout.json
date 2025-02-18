@@ -1,0 +1,361 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github\\PokeDB\\PokemonDB_MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\home\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|d:\\github\\pokedb\\pokemondb_mvc\\pokemondb_mvc\\controllers\\pokemontblscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\controllers\\pokemontblscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\controllers\\trainertblscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\controllers\\trainertblscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\pokemontbls\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\pokemontbls\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\pokemontbls\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\pokemontbls\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\javascript\\javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\javascript\\javascript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\trainertbls\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\trainertbls\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\errorcontrol\\http400.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\errorcontrol\\http400.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\trainertbls\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\trainertbls\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|D:\\Github\\PokeDB\\PokemonDB_MVC\\pokemondb_mvc\\views\\trainertbls\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4EDF1824-230C-486F-A906-46AC4AD4D4F0}|PokemonDB_MVC\\PokemonDB_MVC.csproj|solutionrelative:pokemondb_mvc\\views\\trainertbls\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Web.config",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Web.config",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Web.config",
+              "RelativeToolTip": "PokemonDB_MVC\\Web.config",
+              "ViewState": "AgIAACgAAAAAAAAAAAAvwEQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-17T15:50:12.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\PokemonTbls\\Index.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\PokemonTbls\\Index.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\PokemonTbls\\Index.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\PokemonTbls\\Index.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\PokemonTbls\\Details.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\PokemonTbls\\Details.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\PokemonTbls\\Details.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\PokemonTbls\\Details.cshtml",
+              "ViewState": "AgIAABEBAAAAAAAAAAAiwBwBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Site.css",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\CSS\\Site.css",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\CSS\\Site.css",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\CSS\\Site.css",
+              "RelativeToolTip": "PokemonDB_MVC\\CSS\\Site.css",
+              "ViewState": "AgIAALsDAAAAAAAAAAAAAMgDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-17T15:50:12.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "PokemonDB_MVC\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:56:47.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Controllers\\AboutController.cs",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "PokemonDB_MVC\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:50:12.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PokemonTblsController.cs",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Controllers\\PokemonTblsController.cs",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Controllers\\PokemonTblsController.cs",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Controllers\\PokemonTblsController.cs",
+              "RelativeToolTip": "PokemonDB_MVC\\Controllers\\PokemonTblsController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAHAAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:50:12.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\Home\\Home.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\Home\\Home.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\Home\\Home.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\Home\\Home.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwBoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PokemonDB_MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:50:12.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainerTblsController.cs",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Controllers\\TrainerTblsController.cs",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Controllers\\TrainerTblsController.cs",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Controllers\\TrainerTblsController.cs",
+              "RelativeToolTip": "PokemonDB_MVC\\Controllers\\TrainerTblsController.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAwwHsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:50:12.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAiwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\TrainerTbls\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\TrainerTbls\\Edit.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\TrainerTbls\\Edit.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\TrainerTbls\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Global.asax.cs",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Global.asax.cs",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Global.asax.cs",
+              "RelativeToolTip": "PokemonDB_MVC\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:50:12.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "packages.config",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\packages.config",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\packages.config",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\packages.config",
+              "RelativeToolTip": "PokemonDB_MVC\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-17T16:39:08.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Http400.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\ErrorControl\\Http400.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\ErrorControl\\Http400.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\ErrorControl\\Http400.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\ErrorControl\\Http400.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "web.config",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\web.config",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\web.config",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\web.config",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-17T16:39:40.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T16:39:22.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JavaScript.js",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Javascript\\JavaScript.js",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Javascript\\JavaScript.js",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Javascript\\JavaScript.js",
+              "RelativeToolTip": "PokemonDB_MVC\\Javascript\\JavaScript.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-17T16:34:24.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\TrainerTbls\\Create.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\TrainerTbls\\Create.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\TrainerTbls\\Create.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\TrainerTbls\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\TrainerTbls\\Delete.cshtml",
+              "RelativeDocumentMoniker": "PokemonDB_MVC\\Views\\TrainerTbls\\Delete.cshtml",
+              "ToolTip": "D:\\Github\\PokeDB\\PokemonDB_MVC\\PokemonDB_MVC\\Views\\TrainerTbls\\Delete.cshtml",
+              "RelativeToolTip": "PokemonDB_MVC\\Views\\TrainerTbls\\Delete.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T15:50:12.997Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

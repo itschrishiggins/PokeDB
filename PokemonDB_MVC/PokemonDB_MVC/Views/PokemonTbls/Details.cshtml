@@ -1,0 +1,286 @@
+﻿@model PokemonDB_MVC.Models.PokemonTbl
+
+@{
+    ViewBag.Title = Model.PokemonName;
+    string format = "000";
+    string paramaterValue = Model.PokedexNo.ToString(format);
+
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0-rc.1/chartjs-plugin-datalabels.min.js" integrity="sha512-+UYTD5L/bU1sgAfWA0ELK5RlQ811q8wZIocqI7+K0Lhh8yVdIoAMEs96wJAIbgFvzynPm36ZCXtkydxu1cs27w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<img class="pokeball" src="~/Images/pokeball.svg" />
+
+<section class="main-section">
+
+    <div class="details-container">
+        <div class="name-container">
+            <h1 id="pkm-number">#@paramaterValue</h1>
+            <h2 id="pkm-name">@Html.DisplayFor(model => model.PokemonName)</h2>
+            <h3 id="pkm-category">@ViewBag.apiData.Category Pokémon</h3>
+            @if (Model.Image2 != null)
+            {
+                var imgAs64 = Convert.ToBase64String(Model.Image2);
+                var imgAsPng = string.Format("data:image/gif; base64, {0}", imgAs64);
+                <img src="@imgAsPng" id="pkm-img-source" />
+            }
+
+
+            <p class="back-to-pokedex">
+                @Html.ActionLink("Back to Pokédex", "Index", new object { }, new { @class = "trainer-action-controls" })
+            </p>
+        </div>
+
+        <div class="info-container">
+            <h3>Type</h3>
+
+            <div class="pkm-type">
+                <img id="pkm-type-icon" />
+                <div id="pkm-type-div">@Html.DisplayFor(model => model.Type1)</div>
+            </div>
+            <div class="pkm-type">
+                <img id="pkm-type-icon2" />
+                <div id="pkm-type-div2">@Html.DisplayFor(model => model.Type2)</div>
+            </div>
+
+            <br /><br /><br />
+
+            <div class="pkm-measurements">
+                <div class="pkm-height">
+                    <h3>Height</h3>
+                    <span>@ViewBag.apiData.HeightMetres</span>m
+                </div>
+                <div class="pkm-weight">
+                    <h3>Weight</h3>
+                    <span>@ViewBag.apiData.WeightKG</span>kg
+                </div>
+            </div>
+
+            <br /><br />
+
+            <h3>About</h3>
+            <p>
+                @ViewBag.apiData.Description
+            </p>
+        </div>
+
+
+        <div class="pkm-stats-container">
+            <h3>Base stats</h3>
+            <canvas id="statsChart"></canvas>
+            <div class="total-stats">
+                <h3>
+                    Total
+                </h3>
+                <h4 class="total-stats">
+                    @ViewBag.apiData.Total
+                </h4>
+            </div>
+        </div>
+    </div>
+    <br />
+</section>
+
+
+<script>
+
+    //only make one div if Pokemon only has one type
+    $('.pkm-type').each(function () {
+        if (!$(this).text().trim().length) {
+            $(this).css('display', 'none');
+        }
+    });
+</script>
+
+
+<script>
+
+    //To change the divs depending on Pokemon type
+
+    $(document).ready(function () {
+        $(".pkm-type:contains('Normal')").css('background-color', '#9099a1');
+        $(".pkm-type:contains('Fighting')").css('background-color', '#ce4069');
+        $(".pkm-type:contains('Flying')").css('background-color', '#92aade');
+        $(".pkm-type:contains('Poison')").css('background-color', '#ab6ac8');
+        $(".pkm-type:contains('Ground')").css('background-color', '#d97746');
+        $(".pkm-type:contains('Rock')").css('background-color', '#c7b78b');
+        $(".pkm-type:contains('Bug')").css('background-color', '#90c12c');
+        $(".pkm-type:contains('Ghost')").css('background-color', '#5269ac');
+        $(".pkm-type:contains('Steel')").css('background-color', '#5a8ea1');
+        $(".pkm-type:contains('Fire')").css('background-color', '#ff9c54');
+        $(".pkm-type:contains('Water')").css('background-color', '#4d90d5');
+        $(".pkm-type:contains('Grass')").css('background-color', '#63bb5b');
+        $(".pkm-type:contains('Electric')").css('background-color', '#f3d23b');
+        $(".pkm-type:contains('Psychic')").css('background-color', '#f97176');
+        $(".pkm-type:contains('Ice')").css('background-color', '#74cec0');
+        $(".pkm-type:contains('Dragon')").css('background-color', '#096dc4');
+        $(".pkm-type:contains('Dark')").css('background-color', '#5a5366');
+        $(".pkm-type:contains('Fairy')").css('background-color', '#ec8fe6');
+    });
+</script>
+
+<script>
+    //To add a type icon depending on type
+    var typeDiv = document.getElementById('pkm-type-div');
+    var typeDiv2 = document.getElementById('pkm-type-div2');
+    var typeSrc = document.getElementById('pkm-type-icon');
+    var typeSrc2 = document.getElementById('pkm-type-icon2');
+
+
+    if (typeDiv.textContent.includes('Normal')) { typeSrc.src = "/Images/Type Icons/normal.png"; }
+    if (typeDiv.textContent.includes('Fighting')) { typeSrc.src = "/Images/Type Icons/fighting.png"; }
+    if (typeDiv.textContent.includes('Flying')) { typeSrc.src = "/Images/Type Icons/flying.png"; }
+    if (typeDiv.textContent.includes('Poison')) { typeSrc.src = "/Images/Type Icons/poison.png"; }
+    if (typeDiv.textContent.includes('Ground')) { typeSrc.src = "/Images/Type Icons/ground.png"; }
+    if (typeDiv.textContent.includes('Rock')) { typeSrc.src = "/Images/Type Icons/rock.png"; }
+    if (typeDiv.textContent.includes('Bug')) { typeSrc.src = "/Images/Type Icons/bug.png"; }
+    if (typeDiv.textContent.includes('Ghost')) { typeSrc.src = "/Images/Type Icons/ghost.png"; }
+    if (typeDiv.textContent.includes('Steel')) { typeSrc.src = "/Images/Type Icons/steel.png"; }
+    if (typeDiv.textContent.includes('Fire')) { typeSrc.src = "/Images/Type Icons/fire.png"; }
+    if (typeDiv.textContent.includes('Water')) { typeSrc.src = "/Images/Type Icons/water.png"; }
+    if (typeDiv.textContent.includes('Grass')) { typeSrc.src = "/Images/Type Icons/grass.png"; }
+    if (typeDiv.textContent.includes('Electric')) { typeSrc.src = "/Images/Type Icons/electric.png"; }
+    if (typeDiv.textContent.includes('Psychic')) { typeSrc.src = "/Images/Type Icons/psychic.png"; }
+    if (typeDiv.textContent.includes('Ice')) { typeSrc.src = "/Images/Type Icons/ice.png"; }
+    if (typeDiv.textContent.includes('Dragon')) { typeSrc.src = "/Images/Type Icons/dragon.png"; }
+    if (typeDiv.textContent.includes('Dark')) { typeSrc.src = "/Images/Type Icons/dark.png"; }
+    if (typeDiv.textContent.includes('Fairy')) { typeSrc.src = "/Images/Type Icons/fairy.png"; }
+
+    if (typeDiv2.textContent.includes('Normal')) { typeSrc2.src = "/Images/Type Icons/normal.png"; }
+    if (typeDiv2.textContent.includes('Fighting')) { typeSrc2.src = "/Images/Type Icons/fighting.png"; }
+    if (typeDiv2.textContent.includes('Flying')) { typeSrc2.src = "/Images/Type Icons/flying.png"; }
+    if (typeDiv2.textContent.includes('Poison')) { typeSrc2.src = "/Images/Type Icons/poison.png"; }
+    if (typeDiv2.textContent.includes('Ground')) { typeSrc2.src = "/Images/Type Icons/ground.png"; }
+    if (typeDiv2.textContent.includes('Rock')) { typeSrc2.src = "/Images/Type Icons/rock.png"; }
+    if (typeDiv2.textContent.includes('Bug')) { typeSrc2.src = "/Images/Type Icons/bug.png"; }
+    if (typeDiv2.textContent.includes('Ghost')) { typeSrc2.src = "/Images/Type Icons/ghost.png"; }
+    if (typeDiv2.textContent.includes('Steel')) { typeSrc2.src = "/Images/Type Icons/steel.png"; }
+    if (typeDiv2.textContent.includes('Fire')) { typeSrc2.src = "/Images/Type Icons/fire.png"; }
+    if (typeDiv2.textContent.includes('Water')) { typeSrc2.src = "/Images/Type Icons/water.png"; }
+    if (typeDiv2.textContent.includes('Grass')) { typeSrc2.src = "/Images/Type Icons/grass.png"; }
+    if (typeDiv2.textContent.includes('Electric')) { typeSrc2.src = "/Images/Type Icons/electric.png"; }
+    if (typeDiv2.textContent.includes('Psychic')) { typeSrc2.src = "/Images/Type Icons/psychic.png"; }
+    if (typeDiv2.textContent.includes('Ice')) { typeSrc2.src = "/Images/Type Icons/ice.png"; }
+    if (typeDiv2.textContent.includes('Dragon')) { typeSrc2.src = "/Images/Type Icons/dragon.png"; }
+    if (typeDiv2.textContent.includes('Dark')) { typeSrc2.src = "/Images/Type Icons/dark.png"; }
+    if (typeDiv2.textContent.includes('Fairy')) { typeSrc2.src = "/Images/Type Icons/fairy.png"; }
+</script>
+
+
+
+<script>
+
+    //bar charts for Pokémon statistics
+    const labels = ["HP", "Attack", "Defense", "SpAtk", "SpDef", "Speed"];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            axis: 'y',
+
+            data: [@ViewBag.apiData.HP, @ViewBag.apiData.Attack, @ViewBag.apiData.Defense, @ViewBag.apiData.SpAtk, @ViewBag.apiData.SpDef, @ViewBag.apiData.Speed],
+            fill: false,
+            backgroundColor: ["rgba(255, 89, 89, 255)", "rgba(245, 172, 120, 255)", "rgba(250, 224, 120, 255)", "rgba(157, 183, 245, 255)", "rgba(167,219,141,255)", "rgba(250, 146, 178, 255)"],
+        }]
+    };
+
+    const config = {
+
+        type: 'bar',
+        data,
+        plugins: [ChartDataLabels],
+        options: {
+            hover: () => { },
+            legend: {
+                display: false
+            },
+            plugins: {
+                tooltip: {
+                    enabled: false
+                },
+                legend: {
+                    display: false
+                },
+                datalabels: {
+                    color: 'white'
+                }
+            },
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    grid: {
+                        display: false,
+
+                    },
+                    ticks: {
+                        display: false
+                    },
+                    beginAtZero: true,
+                    display: false
+                },
+                y: {
+                    grid: {
+                        display: false,
+                        drawBorder: false
+                    },
+                    ticks: {
+                        color: '#000'
+                    },
+                }
+            }
+        },
+    };
+</script>
+
+
+<script>
+    //calling barchart script
+    Chart.defaults.font.size = 16;
+    Chart.defaults.font.family = "Poppins";
+    Chart.defaults.font.color = "black";
+    const statsChart = new Chart(
+        document.getElementById('statsChart'),
+        config
+    );
+</script>
+
+<script>
+    // Change the sidebar and sidebar icons depending on the color of the Pokémon image
+    const testDiv = document.querySelector(".sidebar");
+    const searchIcon = document.querySelector(".bx-search");
+    const testImg = document.getElementById("pkm-img-source");
+    const colorThief = new ColorThief();
+    const hover = document.querySelectorAll(".hover");
+
+    // Function to set background color using Color Thief
+    function setBackgroundColor(element, img) {
+        if (img.complete) {
+            const color = colorThief.getColor(img);
+            element.style.background = `rgb(${color.join(',')})`;
+        } else {
+            img.addEventListener('load', function () {
+                const color = colorThief.getColor(img);
+                element.style.background = `rgb(${color.join(',')})`;
+            });
+        }
+    }
+
+    // Set background for sidebar and search icon
+    setBackgroundColor(testDiv, testImg);
+    setBackgroundColor(searchIcon, testImg);
+
+    // Set color for hover elements
+    hover.forEach(elem => {
+        if (testImg.complete) {
+            elem.style.color = "white";
+        } else {
+            testImg.addEventListener('load', function () {
+                const color = colorThief.getColor(testImg);
+                elem.style.background = `rgb(${color.join(',')})`;
+            });
+        }
+    });
+
+</script>

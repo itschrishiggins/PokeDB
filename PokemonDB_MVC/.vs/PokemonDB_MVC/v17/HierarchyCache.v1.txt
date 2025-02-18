@@ -1,0 +1,288 @@
+﻿++Solution 'PokemonDB_MVC' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:PokemonDB_MVC.sln
+++PokemonDB_MVC
+i:{00000000-0000-0000-0000-000000000000}:PokemonDB_MVC
+++Properties
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\properties\
+++References
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++App_Data
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\app_data\
+++App_Start
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\app_start\
+++RouteConfig.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\app_start\routeconfig.cs
+++Content
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\content\
+++Controllers
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\controllers\
+++AboutController.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\controllers\aboutcontroller.cs
+++HomeController.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\controllers\homecontroller.cs
+++PokemonTblsController.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\controllers\pokemontblscontroller.cs
+++TrainerTblsController.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\controllers\trainertblscontroller.cs
+++CSS
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\css\
+++Site.css
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\css\site.css
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\content\site.css
+++Images
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\
+++About
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\about\
+++Battle.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\battle.png
+++characters-now.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\characters-now.png
+++characters.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\characters.png
+++Eeevee.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\eeevee.png
+++Flareon.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\flareon.png
+++gameplay-evolution.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\gameplay-evolution.png
+++heartscale.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\heartscale.png
+++Jolteon.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\jolteon.png
+++Nidoqueen.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\nidoqueen.png
+++Nidoran ♀.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\nidoran ♀.png
+++Nidorana.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\nidorana.png
+++pikachu-anime.jpg
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\pikachu-anime.jpg
+++pikachu-before.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\pikachu-before.png
+++pikachu-evolution.gif
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\pikachu-evolution.gif
+++starter-pokemon.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\starter-pokemon.png
+++tcg.jpg
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\tcg.jpg
+++thunderstone.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\thunderstone.png
+++Vaporeon.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\vaporeon.png
+++yellowshard.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\yellowshard.png
+++zapplate.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\about\zapplate.png
+++Home
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\home\
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\home\
+++DP_Pokédex.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\home\dp_pokédex.png
+++Professor_Oak.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\home\professor_oak.png
+++site-logo.png
+++nav icons
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\nav icons\
+++Type Icons
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\
+++bug.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\bug.png
+++dark.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\dark.png
+++dragon.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\dragon.png
+++electric.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\electric.png
+++fairy.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\fairy.png
+++fighting.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\fighting.png
+++fire.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\fire.png
+++flying.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\flying.png
+++ghost.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\ghost.png
+++grass.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\grass.png
+++ground.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\ground.png
+++ice.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\ice.png
+++normal.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\normal.png
+++poison.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\poison.png
+++psychic.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\psychic.png
+++rock.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\rock.png
+++steel.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\steel.png
+++water.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\type icons\water.png
+++Hilbert.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\hilbert.png
+++Hilda.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\hilda.png
+++oak.gif
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\oak.gif
+++pokeball.svg
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\pokeball.svg
+++pokedex.svg
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\pokedex.svg
+++pokedex2.svg
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\pokedex2.svg
+++pokemon-logo.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\pokemon-logo.png
+++SVG_Trophy_Star.svg
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\svg_trophy_star.svg
+++trainer.png
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\trainer.png
+++Javascript
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\javascript\
+++Models
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\
+++ConnectionToPokemonDBEDM.edmx
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\connectiontopokemondbedm.edmx
+++ConnectionToPokemonDBEDM.Context.tt
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\connectiontopokemondbedm.context.tt
+++ConnectionToPokemonDBEDM.Context.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\connectiontopokemondbedm.context.cs
+++ConnectionToPokemonDBEDM.Designer.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\connectiontopokemondbedm.designer.cs
+++ConnectionToPokemonDBEDM.edmx.diagram
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\connectiontopokemondbedm.edmx.diagram
+++ConnectionToPokemonDBEDM.tt
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\connectiontopokemondbedm.tt
+++ConnectionToPokemonDBEDM.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\connectiontopokemondbedm.cs
+++PokemonTbl.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\pokemontbl.cs
+++TrainerTbl.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\trainertbl.cs
+++PokemonInfo.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\models\pokemoninfo.cs
+++Views
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\
+++About.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\about\about.cshtml
+++Home.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\home\home.cshtml
+++PokemonTbls
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\pokemontbls\
+++Create.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\pokemontbls\create.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\trainertbls\create.cshtml
+++Delete.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\pokemontbls\delete.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\trainertbls\delete.cshtml
+++Details.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\pokemontbls\details.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\trainertbls\details.cshtml
+++Edit.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\pokemontbls\edit.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\trainertbls\edit.cshtml
+++Index.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\pokemontbls\index.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\trainertbls\index.cshtml
+++Shared
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\shared\
+++_Layout.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\shared\_layout.cshtml
+++Error.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\shared\error.cshtml
+++TrainerTbls
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\trainertbls\
+++_ViewStart.cshtml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\_viewstart.cshtml
+++web.config
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\views\web.config
+++Global.asax
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\global.asax
+++packages.config
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\packages.config
+++Web.config
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\web.config
+++Web.Debug.config
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\web.debug.config
+++Web.Release.config
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\web.release.config
+++AssemblyInfo.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\properties\assemblyinfo.cs
+++EntityFramework
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++EntityFramework.SqlServer
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++Microsoft.CSharp
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++Microsoft.Web.Infrastructure
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++Newtonsoft.Json
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.ComponentModel.DataAnnotations
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Configuration
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Core
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Data
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Data.DataSetExtensions
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Drawing
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.EnterpriseServices
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Net.Http
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Net.Http.Formatting
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Runtime.Serialization
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Security
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.ApplicationServices
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.DynamicData
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Entity
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Extensions
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Helpers
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Mvc
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Razor
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Services
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Webpages
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Webpages.Deployment
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Web.Webpages.Razor
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Xml
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++System.Xml.Linq
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:
+++pokeball-nav.svg
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\nav icons\pokeball-nav.svg
+++JavaScript.js
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\javascript\javascript.js
+++Global.asax.cs
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\global.asax.cs
+++pokeball-home.svg
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\home\pokeball-home.svg
+++favicon.png
+++favicon.ico
+i:{4edf1824-230c-486f-a906-46ac4ad4d4f0}:c:\users\chris\desktop\final project\pokemondb_mvc\pokemondb_mvc\images\favicon.ico

@@ -1,0 +1,84 @@
+﻿@model IEnumerable<PokemonDB_MVC.Models.TrainerTbl>
+
+@{
+    ViewBag.Title = "Hall of Fame";
+}
+
+
+<img src="~/Images/SVG_Trophy_Star.svg" class="trophy"/>
+<section class="main-section">
+    
+    <div class="trainer-background">
+        <div class="trainer-container">
+            <div class="trainer-text">
+                <h1>🏆</h1>
+                <h2>Hall of Fame</h2>
+                <br />
+                <p>Welcome to the Hall of Fame - a place for Trainers who have battled their way all the way to the Elite Four and beat the Champion.</p>
+
+                <p>
+                    Here you can create your very own Trainer Card and join the Hall of Fame!
+                </p>
+
+                <br />
+                <br />
+
+                <p>
+                    <u> @Html.ActionLink("Click here to create your own Trainer Card", "Create", "Create", new { @class = "trainer-action-controls" }) </u>
+                </p>
+
+            </div>
+            @foreach (var item in Model)
+            {
+
+                <div class="trainer-card">
+                    <img src="~/Images/trainer.png" class="trainer-card-img" style="width:100%;" />
+                    <div class="trainer-id">
+                        ID: @Html.DisplayFor(modelItem => item.TrainerID)
+                    </div>
+                    <div class="trainer-name">
+                        NAME: @Html.DisplayFor(modelItem => item.TrainerName)
+                    </div>
+                    <div class="trainer-image">
+                        <img />
+                        @if (item.Gender == "Male")
+                        {
+                            <img src="~/Images/hilbert.png" />
+                        }
+                        else if (item.Gender == "Female")
+                        {
+                            <img src="~/Images/hilda.png" />
+                        }
+                    </div>
+                    <div class="pokemon-image">
+                        @if (item.PokemonTbl.Image != null)
+                        {
+                            var imgAs64 = Convert.ToBase64String(item.PokemonTbl.Image);
+                            var imgAsGif = string.Format("data:image/gif; base64, {0}", imgAs64);
+                            <img src="@imgAsGif" />
+                        }
+                        else
+                        {
+                            <span>No image available</span>
+                        }
+                    </div>
+                    <div class="trainer-badges">
+                        <h5>BADGES</h5>
+                    </div>
+                    <div class="index-action" style="font-size:16px;">
+                        @Html.ActionLink("View Card", "Details", new { id = item.TrainerID }, new { @class = "trainer-action-controls" })
+                    </div>
+                </div>
+
+            }
+
+        </div>
+        
+        
+        
+    </div>
+</section>
+
+
+
+

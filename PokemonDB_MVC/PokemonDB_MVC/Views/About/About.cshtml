@@ -1,0 +1,320 @@
+﻿<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<section class="main-section">
+    <div class="tab">
+        <button class="tablinks" onclick="openPage(event, 'about-pokemon')" id="defaultOpen">What Are Pokémon?</button>
+        <button class="tablinks" onclick="openPage(event, 'video-games')">Video Games</button>
+        <button class="tablinks" onclick="openPage(event, 'anime')">Anime Series & Movies</button>
+        <button class="tablinks" onclick="openPage(event, 'tcg')">Trading Card Game</button>
+
+
+    </div>
+
+    <div id="about-pokemon" class="tabcontent">
+        <div class="about-container">
+
+            <h3>What are Pokémon?</h3>
+            <p>
+                Pokémon are creatures of all shapes and sizes who live in the wild or alongside their human partners (called “Trainers”). During their adventures, Pokémon grow and become more
+                experienced and even, on occasion, evolve into stronger Pokémon. Hundreds of known Pokémon inhabit the Pokémon universe, with untold numbers waiting to be discovered!
+                <br />
+                <br />
+
+                <figure class="anime-pic">
+                    <img src="~/Images/About/starter-pokemon.png" />
+                    <figcaption>
+                        Bulbasaur, Charmander and Squirtle - the original <br />
+                        starter Pokémon
+                    </figcaption>
+                </figure>
+                <br />
+            </p>
+            <p>
+                Pokémon inhabit an extremely diverse range of habitats, ranging from the driest deserts to the lushest jungles, the deepest oceans to the highest mountains and everything else
+                in between, even outer space and other dimensions. One of their main features is that they can be caught using a Poké Ball, which allows them to be carried around.
+            </p>
+            <br />
+            <hr />
+
+            <h3>How many kinds of Pokémon are there?</h3>
+            Just how many kinds of Pokémon exist? The exact number is unknown.
+            <br />
+            <br />
+            While over 900 kinds of Pokémon have been confirmed, as of yet unseen Pokémon will surely be discovered in the future.
+
+            <br />
+            <br />
+            <hr />
+
+            <h3>Types</h3>
+            <p>
+                Pokémon are classified into 18 types based on their characteristics. For example, Pikachu is an Electric type Pokémon and Magikarp is a Water type. There are some Pokémon who belong
+                to two types, such as Bulbasaur, who is both Grass and Poison. Each type has special affinities that have a big effect on battles.
+                If your opponent's Pokémon has the right type of affinity, it can be a huge advantage in battle.
+
+                <br />
+                <br />
+                Some Pokémon like the Eevee below can evolve into Pokémon that are not the same type - in Eevee's it can have a completely different evolution for many of the different Pokémon types.
+                <ul class="eevee-list">
+                    <li>
+                        <figure class="eevee">
+                            <img src="~/Images/About/Eeevee.png" />
+                            <figcaption>
+                                Eeevee
+                                <br /><em>Normal type</em>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="eevee">
+                            <img src="~/Images/About/Vaporeon.png" />
+                            <figcaption>
+                                Vaporeon
+                                <br /><em>Water type</em>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="eevee">
+                            <img src="~/Images/About/Jolteon.png" />
+                            <figcaption>
+                                Jolteon
+                                <br /><em>Electric type</em>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="eevee">
+                            <img src="~/Images/About/Flareon.png" />
+                            <figcaption>
+                                Flareon
+                                <br /><em>Fire type</em>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </p>
+            <br />
+            <hr />
+
+            <h3>Evolution</h3>
+            <p>
+                Many Pokémon are able to evolve from or into other Pokémon, a process that typically makes them larger and stronger. Pokémon can evolve by leveling up through Pokémon battles.
+
+                <br />For example, in the case of Caterpie:
+                <br />
+                <ul class="caterpie-list">
+                    <li>
+                        <figure class="caterpie">
+                            <img src="~/Images/About/Caterpie.png" />
+                            <figcaption>
+                                Caterpie  ><br />
+                                (Level 7)
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="caterpie">
+                            <img src="~/Images/About/Metapod.png" />
+                            <figcaption>
+                                Metapod ><br />
+                                (Level 10)
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="caterpie">
+                            <img src="~/Images/About/Butterfree.png" />
+                            <figcaption>
+                                Butterfree
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <br />
+                <br /> However, there are many other ways a Pokémon can evolve. They can also evolve after being exposed to an item (such as an Evolution stone) or being traded. Some Pokémon can even
+                only evolve under certain conditions, such as the time of day, or how strong their friendship with their trainer is.
+            </p>
+
+            <br />
+
+            <p class="drag-title"> <em><strong>Try to drag different items onto the Pikachu below and see what happens!</strong></em></p>
+
+            <div class="drag-drop">
+                <div class="drag-items">
+                    <figure class="drag">
+                        <img src="~/Images/About/zapplate.png" />
+                        <figcaption>Zap Plate</figcaption>
+                    </figure>
+                    <figure class="drag">
+                        <img src="~/Images/About/yellowshard.png" />
+                        <figcaption>Yellow Shard</figcaption>
+                    </figure>
+                    <figure class="drag thunder">
+                        <img src="~/Images/About/thunderstone.png" />
+                        <figcaption>Thunder Stone</figcaption>
+                    </figure>
+                    <figure class="drag">
+                        <img src="~/Images/About/heartscale.png" />
+                        <figcaption>Heart Scale</figcaption>
+                    </figure>
+                </div>
+                <div id="drop">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="video-games" class="tabcontent">
+        <div class="about-container">
+
+            <h3>Video Games</h3>
+            <p>
+                What set Pokémon apart from other games up until that point was that players could exchange Pokémon between different versions of the game.
+                <br />
+                Players try to complete the Pokédex within the game. Some Pokémon are difficult to catch, and some rare ones only appear in certain versions of the game.
+                <br />
+                <br />
+                The game is designed so that players cooperate with friends and family who play Pokémon to catch Pokémon they can't catch by themselves. The more people who play together,
+                <br />
+                the more fun it becomes. A small Pokémon trading ring soon grows into a big ring.
+            </p>
+
+            <figure class="gameplay">
+                <img src="~/Images/About/gameplay-evolution.png" />
+                <figcaption>The video games have changed a lot over the years</figcaption>
+            </figure>
+
+            <h3>Battles</h3>
+            <p>
+                Many people in the Pokémon world take Pokémon with them on a journey to gather Badges and compete in the various Pokémon Leagues as Trainers, using them in battles against Pokémon
+                both owned by other Trainers and found in the wild.
+                By battling other Pokémon, a Trainer’s Pokémon can gain experience and level up. This can help them to learn new moves and, in some cases, to evolve.
+                <figure class="gameplay">
+                    <img src="~/Images/About/Battle.png" />
+                    <figcaption>Gameplay of a typical Pokémon battle</figcaption>
+                </figure>
+            </p>
+        </div>
+    </div>
+
+    <div id="anime" class="tabcontent">
+        <div class="about-container">
+
+            <h3>Anime Series & Games</h3>
+            <p>
+                While remaining faithful to the original video game, the TV Anime series Pokémon explores new forms of storytelling unique to the TV Anime Series.
+                The Pokémon that players are familiar with come to life in stories full of adventure, smiles, and even some tears.
+                <br />
+                <figure class="anime-pic">
+                    <img src="~/Images/About/characters.png" />
+                    <figcaption>3 of the main characters - Misty, Ash and Brock</figcaption>
+                </figure>
+                <br />
+
+                The TV Anime series first aired in Japan in April 1997, and is now a long running series broadcast all over the world.
+                <br />
+                <br />
+                <figure class="anime-pic">
+                    <img src="~/Images/About/characters-now.png" />
+                    <figcaption>The style of the anime has also evolved over time</figcaption>
+                </figure>
+                <br />
+                The movies are created to be enjoyed by both kids and adults and are interwoven with themes of family, life, and taking care of the environment.
+                <br />
+                <br />
+                The anime contributed greatly to the popularity of Pikachu, one of the Pokémon from the games.
+
+                <figure class="anime-pic">
+                    <img src="~/Images/About/pikachu-anime.jpg" />
+                    <figcaption>Pikachu has had a dramatic weight loss ever since his debut in the anime</figcaption>
+                </figure>
+                <br />
+
+            </p>
+        </div>
+    </div>
+
+    <div id="tcg" class="tabcontent">
+        <div class="about-container">
+
+            <h3>Trading Card Game</h3>
+            <p>
+                The Pokémon Trading Card Game focuses on one of the features of the Pokémon video game, Pokémon battles. Players can select and compile their cards for a strategic battle.
+                <br />Another thing to enjoy is the ever-expanding card collection.
+                <br />
+                <br />
+
+                While there are many fun things about Pokémon Trading Card Game, perhaps the most appealing aspect is that it is played person versus person.
+                <br />
+                Players can chat, trade cards, and join tournaments held at various locations all while battling, creating all kinds of memories as they meet people through the card game.
+                <br />
+                <br />
+
+                <figure class="anime-pic">
+                    <img src="~/Images/About/tcg.jpg" />
+                    <figcaption>To date, over 34.1 billion cards have been sold worldwide</figcaption>
+                </figure>
+                <br />
+
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+@*determine which tab is open*@
+<script>
+    function openPage(evt, pageName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(pageName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+<script>
+    //drag and drop script
+    var limit = 1;
+    var counter = 0;
+
+    $(".drag").draggable({
+        revert: "invalid"
+    });
+
+    //only allow thunder stone to trigger animation
+    $("#drop").droppable({
+        accept: ".thunder",
+        drop: function (event, ui) {
+            counter++;
+            if (counter == limit) {
+                $(this).droppable("disable");
+                $(this).css("background-image", "url('https://i.ibb.co/vx8v7JD/pikachu-evolution.gif')");
+                $(this).droppable('option', 'accept', ui.draggable);
+                $(ui.draggable).hide();
+            }
+        }
+    });
+
+</script>

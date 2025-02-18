@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PokemonInfoDB_ModelNamespace" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PokemonInfoTbl">
+    <Key>
+      <PropertyRef Name="PokedexNo" />
+    </Key>
+    <Property Name="PokedexNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="HeightMetres" Type="Double" />
+    <Property Name="WeightKG" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Total" Type="Int32" Nullable="false" />
+    <Property Name="HP" Type="Int32" Nullable="false" />
+    <Property Name="Attack" Type="Int32" Nullable="false" />
+    <Property Name="Defense" Type="Int32" Nullable="false" />
+    <Property Name="SpAtk" Type="Int32" Nullable="false" />
+    <Property Name="SpDef" Type="Int32" Nullable="false" />
+    <Property Name="Speed" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PokemonInfoDB_ConnectionString" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PokemonInfoTbls" EntityType="Self.PokemonInfoTbl" />
+  </EntityContainer>
+</Schema>

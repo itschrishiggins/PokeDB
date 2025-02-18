@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PokemonDBEntityDataModelStoreContainer" CdmEntityContainer="PokemonDBEntitiesConnectionString">
+    <EntitySetMapping Name="PokemonTbls">
+      <EntityTypeMapping TypeName="PokemonDBEntityDataModel.PokemonTbl">
+        <MappingFragment StoreEntitySet="PokemonTbl">
+          <ScalarProperty Name="PokedexNo" ColumnName="PokedexNo" />
+          <ScalarProperty Name="PokemonName" ColumnName="PokemonName" />
+          <ScalarProperty Name="Type1" ColumnName="Type1" />
+          <ScalarProperty Name="Type2" ColumnName="Type2" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrainerTbls">
+      <EntityTypeMapping TypeName="PokemonDBEntityDataModel.TrainerTbl">
+        <MappingFragment StoreEntitySet="TrainerTbl">
+          <ScalarProperty Name="TrainerID" ColumnName="TrainerID" />
+          <ScalarProperty Name="TrainerName" ColumnName="TrainerName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="PokedexNo" ColumnName="PokedexNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

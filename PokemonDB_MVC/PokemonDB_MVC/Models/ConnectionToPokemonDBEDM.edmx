@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PokemonDBEntityDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="PokemonTbl">
+          <Key>
+            <PropertyRef Name="PokedexNo" />
+          </Key>
+          <Property Name="PokedexNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PokemonName" Type="nvarchar" MaxLength="20" />
+          <Property Name="Type1" Type="nvarchar" MaxLength="10" />
+          <Property Name="Type2" Type="nvarchar" MaxLength="10" />
+          <Property Name="Image" Type="varbinary(max)" />
+		  <Property Name="Image2" Type="varbinary(max)" />	  
+        </EntityType>
+        <EntityType Name="TrainerTbl">
+          <Key>
+            <PropertyRef Name="TrainerID" />
+          </Key>
+          <Property Name="TrainerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TrainerName" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PokedexNo" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_TrainerTbl_PokemonTbl">
+          <End Role="PokemonTbl" Type="Self.PokemonTbl" Multiplicity="1" />
+          <End Role="TrainerTbl" Type="Self.TrainerTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PokemonTbl">
+              <PropertyRef Name="PokedexNo" />
+            </Principal>
+            <Dependent Role="TrainerTbl">
+              <PropertyRef Name="PokedexNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PokemonDBEntityDataModelStoreContainer">
+          <EntitySet Name="PokemonTbl" EntityType="Self.PokemonTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TrainerTbl" EntityType="Self.TrainerTbl" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TrainerTbl_PokemonTbl" Association="Self.FK_TrainerTbl_PokemonTbl">
+            <End Role="PokemonTbl" EntitySet="PokemonTbl" />
+            <End Role="TrainerTbl" EntitySet="TrainerTbl" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PokemonDBEntityDataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="PokemonTbl">
+          <Key>
+            <PropertyRef Name="PokedexNo" />
+          </Key>
+          <Property Name="PokedexNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PokemonName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Type1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Type2" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+		  <Property Name="Image2" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="TrainerTbls" Relationship="Self.FK_TrainerTbl_PokemonTbl" FromRole="PokemonTbl" ToRole="TrainerTbl" />
+        </EntityType>
+        <EntityType Name="TrainerTbl">
+          <Key>
+            <PropertyRef Name="TrainerID" />
+          </Key>
+          <Property Name="TrainerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TrainerName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Gender" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PokedexNo" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PokemonTbl" Relationship="Self.FK_TrainerTbl_PokemonTbl" FromRole="TrainerTbl" ToRole="PokemonTbl" />
+        </EntityType>
+        <Association Name="FK_TrainerTbl_PokemonTbl">
+          <End Role="PokemonTbl" Type="Self.PokemonTbl" Multiplicity="1" />
+          <End Role="TrainerTbl" Type="Self.TrainerTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PokemonTbl">
+              <PropertyRef Name="PokedexNo" />
+            </Principal>
+            <Dependent Role="TrainerTbl">
+              <PropertyRef Name="PokedexNo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PokemonDBEntitiesConnectionString" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="PokemonTbls" EntityType="Self.PokemonTbl" />
+          <EntitySet Name="TrainerTbls" EntityType="Self.TrainerTbl" />
+          <AssociationSet Name="FK_TrainerTbl_PokemonTbl" Association="Self.FK_TrainerTbl_PokemonTbl">
+            <End Role="PokemonTbl" EntitySet="PokemonTbls" />
+            <End Role="TrainerTbl" EntitySet="TrainerTbls" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PokemonDBEntityDataModelStoreContainer" CdmEntityContainer="PokemonDBEntitiesConnectionString">
+          <EntitySetMapping Name="PokemonTbls">
+            <EntityTypeMapping TypeName="PokemonDBEntityDataModel.PokemonTbl">
+              <MappingFragment StoreEntitySet="PokemonTbl">
+                <ScalarProperty Name="PokedexNo" ColumnName="PokedexNo" />
+                <ScalarProperty Name="PokemonName" ColumnName="PokemonName" />
+                <ScalarProperty Name="Type1" ColumnName="Type1" />
+                <ScalarProperty Name="Type2" ColumnName="Type2" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+				<ScalarProperty Name="Image2" ColumnName="Image2" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TrainerTbls">
+            <EntityTypeMapping TypeName="PokemonDBEntityDataModel.TrainerTbl">
+              <MappingFragment StoreEntitySet="TrainerTbl">
+                <ScalarProperty Name="TrainerID" ColumnName="TrainerID" />
+                <ScalarProperty Name="TrainerName" ColumnName="TrainerName" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="PokedexNo" ColumnName="PokedexNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

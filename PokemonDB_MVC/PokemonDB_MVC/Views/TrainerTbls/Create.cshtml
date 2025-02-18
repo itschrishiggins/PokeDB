@@ -1,0 +1,69 @@
+﻿@model PokemonDB_MVC.Models.TrainerTbl
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="main-section">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h2>Create Your Own Trainer Card</h2>
+            <br />
+            <br />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                Your Name
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TrainerName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TrainerName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                Gender
+                <div class="col-md-10">
+                    <div class="editor-field">
+                        @Html.DropDownList("Gender", new List<SelectListItem>{
+                        new SelectListItem{ Text="Male", Value="Male"},
+                        new SelectListItem{ Text="Female", Value="Female"}
+                        }, "--- Select ---"
+                        )
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                Favourite Pokémon
+                <div class="col-md-10">
+                    @Html.DropDownList("PokedexNo", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.PokedexNo, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    <br />
+    <br />
+
+    <div>
+        @Html.ActionLink("Back to List", "Index", new object { }, new { @class = "trainer-action-controls-delete" })
+    </div>
+</div>
+
+
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
